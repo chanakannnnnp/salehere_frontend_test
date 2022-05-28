@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  font-family: 'Prompt', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: 'Prompt', sans-serif;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+.app {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+*:focus {
+  outline: none;
+}

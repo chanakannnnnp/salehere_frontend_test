@@ -1,0 +1,235 @@
+.custom-background-chat {
+    background-image: url("../../images/bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-white-chat {
+    background-color: #fff;
+    border-radius: 1.25rem;
+    height: 100%;
+    max-height: 80vh;
+    width: 100%;
+}
+  
+.title-chat {
+    font-size: 2.313rem;
+    font-weight: bold;
+    color: #383838;
+}
+
+.input {
+    border-color: #b5b5b5;
+    font-family: 'Prompt', sans-serif;
+
+    &:active {
+        outline: none;
+        border: 1px solid #b5b5b5;
+        box-shadow: 0 0 0 3px #b5b5b5;
+    }
+
+    &:focus {
+        outline: none;
+        border: 1px solid #b5b5b5;
+        box-shadow: 0 0 0 3px #b5b5b5;
+    }
+}
+  
+.button-chat {
+    font-family: 'Prompt', sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    background-image: radial-gradient(ellipse farthest-corner at top left, #c41417 0%, #b31315 100%);
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1rem 1.5rem;
+
+    &:hover {
+        background-color: #c41417;
+        cursor: pointer;
+    }
+}
+
+.text-button-chat {
+    font-family: 'Prompt', sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #6f6f6f;
+}
+
+.red-text-button-chat {
+    font-family: 'Prompt', sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #c41417;
+}
+
+.input-chat {
+    height: 3.75rem;
+    color: #4e4e4e;
+    border: 0.188rem solid lightgray;
+    border-radius: 0.625rem;
+    font-size: 2.125rem;
+}
+
+.logo-chat {
+    width: 15rem;
+    height: fit-content;
+    object-fit: contain;
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 20%, 0);
+      transform: translate3d(0, 20%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 20%, 0);
+      transform: translate3d(0, 20%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+}
+
+.animate__fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+    animation-duration: 2s;
+}
+
+@keyframes fadeOutDown {
+    0% {
+       opacity: 1;
+       transform: translateY(0);
+    }
+    100% {
+       opacity: 0;
+       transform: translateY(20px);
+    } 
+} 
+
+.fadeOutDown {
+    -webkit-animation-name: fadeOutDown;
+    animation-name: fadeOutDown;
+}
+
+@-webkit-keyframes fadeInRight {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(100%, 0, 0);
+      transform: translate3d(100%, 0, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(100%, 0, 0);
+      transform: translate3d(100%, 0, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+}
+
+.animate__fadeInRight {
+    -webkit-animation-name: fadeInRight;
+    animation-name: fadeInRight;
+}
+
+.display-disappear {
+    display: none;
+}
+
+.btn-confirm {
+    color: #fff;
+}
+
+.container-gray-chat {
+    background-color: rgb(247, 247, 247);
+    border-radius: 10px;
+    height: 100%;
+    max-height: 55vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow: auto;
+}
+
+.gray-chat-title {
+    color: rgb(98, 98, 98);
+}
+
+.gray-chat-text {
+    background-color: rgb(236, 236, 236);
+    border-radius: 10px;
+    color: #000;
+    width: fit-content;
+}
+
+.container-my-chat {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.container-other-chat {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.container-timestamp-chat {
+    font-size: 0.5rem;
+    font-weight: normal;
+    color: rgb(197, 197, 197);
+}
+
+.container-text-and-time {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+}
+
+.enter-send-text {
+    color: rgb(98, 98, 98);
+    font-size: 0.75rem;
+    margin-top: -20px;
+    margin-right: 5px;
+    z-index: 999;
+    position: sticky;
+}
